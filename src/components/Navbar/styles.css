@@ -1,0 +1,23 @@
+.navbar-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.list-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+    list-style-type: none;    
+}
+.list-container button{
+    background-color: transparent;
+    border: none;
+    color:rgb(82, 85, 85);
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor:pointer;
+    padding: 0.5rem 1rem;
+    transition: all 0.5s ease-in-out;
+
+}
