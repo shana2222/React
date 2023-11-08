@@ -2,11 +2,11 @@ import Navbar from './components/Navbar/Navbar.jsx';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer.jsx';
 
 function App() {
-  return (
+  return (   
 
-    <div>
+    <div>      
       <Navbar/>
-      <ItemListContainer greeting= "Hola a Todos"/>
+      <ItemListContainer greeting= "Hola a Todos"/>      
     </div>
   );
 }
