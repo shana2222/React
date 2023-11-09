@@ -1,6 +1,7 @@
 import './styles.css';
 import {Button} from 'react-bootstrap';
 import CartWidget from '../CartWidget/CartWidget';
+import { link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
@@ -10,14 +11,23 @@ const Navbar = () => {
 
             </div>
 
-            <div>
+            <nav>
                 <ul className='list-container'>
-                    <li> <button>Ropa </button> </li>
-                    <li> <button>Pisos </button> </li>
-                    <li><button> Limpieza </button> </li>                    
+                    <li> 
+                        <link to={'/category/ropa'}className='navbar-button'>Ropa 
+                        </link> 
+                    </li>
+                    <li> 
+                        <link to={'/category/pisos'}className='navbar-button'>Pisos 
+                        </link> 
+                    </li> 
+                    <li> 
+                        <link to={'/category/limpieza'}className='navbar-button'>Limpieza 
+                        </link> 
+                    </li>             
                 </ul>
                 <CartWidget />
-            </div >
+            </nav >
         </div >
     );
 };

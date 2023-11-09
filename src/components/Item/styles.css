@@ -1,53 +1,68 @@
 .card-grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Cambiando a tres columnas */
-    gap: 20px; /* Espaciado entre tarjetas */
-    padding: 20px; /* Espaciado alrededor de todo el contenedor */
-  }
-  
-  .card-container {
-    display: flex;
-  flex-direction: column;
-  align-items: center; /* Centrado horizontal en el eje cruzado */
- 
-    align-items: center; /* Centrado horizontal en el eje cruzado */
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden; /* Asegura que nada sobresalga del borde redondeado */
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    padding: 5px;
-  }
-  
-  .card-container:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  }
-  
-  .card-title {
-    margin: 0.5em 0;
-  }
-  
-  .card-image {
-    width: 100%; /* La imagen llena el ancho de la tarjeta */
-    height: auto; /* Mantiene la proporción */
-    object-fit: cover; /* Cubre el espacio asignado sin distorsionar la imagen */
-  }
-  
-  .card-description {
-    padding: 0 15px; /* Espaciado horizontal dentro de la descripción */
-    display: flex; /* Se usa flexbox para alinear el contenido de la descripción */
-  align-items: center; /* Centra el contenido verticalmente */
-  text-align: justify; /* Justifica el texto para un aspecto limpio y uniforme */
-  min-height: 120px; /* Establece una altura mínima para la descripción para garantizar la consistencia */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* Cambiando a tres columnas */
+  gap: 20px;
+  /* Espaciado entre tarjetas */
+  padding: 20px;
+  /* Espaciado alrededor de todo el contenedor */
+  list-style: none;
 
-  }
-  
-  .card-price {
-    background-color: #645f5f;
-    width: 100%;
-    padding: 10px;
-    text-align: center;
-    font-weight: bold;
-  }
-  
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Centrado horizontal en el eje cruzado */
+
+  align-items: center;
+  /* Centrado horizontal en el eje cruzado */
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  /* Asegura que nada sobresalga del borde redondeado */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  padding: 20px;
+}
+
+.card-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+  margin: 0.5em 0;
+}
+
+.card-image {
+  width: 100%;
+  /* La imagen llena el ancho de la tarjeta */
+  height: auto;
+  /* Mantiene la proporción */
+  object-fit: cover;
+  /* Cubre el espacio asignado sin distorsionar la imagen */
+}
+
+.card-description {
+  padding: 0 15px;
+  /* Espaciado horizontal dentro de la descripción */
+  display: flex;
+  /* Se usa flexbox para alinear el contenido de la descripción */
+  align-items: center;
+  /* Centra el contenido verticalmente */
+  text-align: justify;
+  /* Justifica el texto para un aspecto limpio y uniforme */
+  min-height: 120px;
+  /* Establece una altura mínima para la descripción para garantizar la consistencia */
+
+}
+
+.card-price {
+  background-color: #645f5f;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}

@@ -1,5 +1,5 @@
-import ItemCount from "../ItemCount/ItemCount";
-import ItemList from "../ItemList/ItemList";
+import ItemCount from "../../components/ItemCount/ItemCount";
+import ItemList from "../../components/ItemList/ItemList";
 import { useState, useEffect } from "react";
 
 const ItemListContainer = ({greeting}) => {

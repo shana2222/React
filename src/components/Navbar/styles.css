@@ -1,7 +1,13 @@
 .navbar-container{
-    display: flex;
-    flex-direction: row;
+    background-color: #bff553;
+    border-bottom: 1px solid #e6e6e6;
+    height: 54px;
+    width: 100%;
     justify-content: space-between;
+    padding: 0 20px;
+
+    align-items: center;    
+    flex-direction: row;
 }
 .list-container{
     display: flex;
